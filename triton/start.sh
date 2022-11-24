@@ -1,0 +1,1 @@
+docker run -it --name triton --net=host -v /home/work/project/modelzoo/triton/models/:/models nvcr.io/nvidia/tritonserver:22.11-py3 bash
