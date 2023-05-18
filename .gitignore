@@ -134,3 +134,7 @@ dmypy.json
 *.pt
 
 mlruns/
+
+*.pt
+*.onnx
+*.checkpoint

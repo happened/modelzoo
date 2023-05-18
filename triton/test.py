@@ -4,9 +4,9 @@ import tritonclient.http as httpclient
 from PIL import Image
 
 if __name__ == '__main__':
-    triton_client = httpclient.InferenceServerClient(url='127.0.0.1:8000')
+    triton_client = httpclient.InferenceServerClient(url='127.0.0.1:18000')
 
-    image = Image.open('./cat.jpg')
+    image = Image.open('../data/cat.jpg')
     image = image.resize((224, 224), Image.ANTIALIAS)
     image = np.asarray(image)
     image = image / 255
